@@ -3,3 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+}
+.close-btn {
+  padding: 13px 21px;
+  border: 0;
+  border-radius: 8px;
+  background-color: var(--tg-theme-button-color);
+  cursor: pointer;
+  font-size: 18px;
+  font-family: -apple-system, Roboto, "Open Sans", sans-serif;
+  color: var(--tg-theme-button-text-color);
+  transition: background-color 0.3s ease;
+}

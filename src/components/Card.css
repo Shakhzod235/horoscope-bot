@@ -1,0 +1,35 @@
+.zodiac-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+  width: 110px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.zodiac-icon,
+.zodiac-name,
+.zodiac-date {
+  text-align: center;
+}
+.zodiac-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.zodiac-name {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.zodiac-date {
+  font-size: 14px;
+  color: #555;
+}
+@media (hover: hover) {
+  .zodiac-card:hover {
+    transform: scale(1.05);
+  }
+}
