@@ -1,16 +1,14 @@
 import { useEffect } from "react";
 import CardList from "../components/CardList";
+import { useTelegram } from "../hooks/useTelegram";
 
-const tg = window.Telegram.WebApp;
 export default function Home() {
-  tg.PopupParams = {};
+  const { tg, onClose, expand } = useTelegram();
   useEffect(() => {
     tg.ready();
   }, []);
-  const onClose = () => {
-    tg.close();
-  };
-  tg.expand();
+  onClose;
+  expand;
   return (
     <>
       <CardList />

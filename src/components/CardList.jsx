@@ -2,6 +2,7 @@ import "./CardList.css";
 import zodiacData from "../locales/en.json";
 import Card from "./Card.jsx";
 import { Link } from "react-router-dom";
+
 export default function CardList() {
   return (
     <div className="zodiacList">
