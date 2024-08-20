@@ -1,14 +1,14 @@
 [
-  { "name": "Овен", "dateRange": "21 марта - 19 апреля", "icon": "♈" },
-  { "name": "Телец", "dateRange": "20 апреля - 20 мая", "icon": "♉" },
-  { "name": "Близнецы", "dateRange": "21 мая - 20 июня", "icon": "♊" },
-  { "name": "Рак", "dateRange": "21 июня - 22 июля", "icon": "♋" },
-  { "name": "Лев", "dateRange": "23 июля - 22 августа", "icon": "♌" },
-  { "name": "Дева", "dateRange": "23 августа - 22 сентября", "icon": "♍" },
-  { "name": "Весы", "dateRange": "23 сентября - 22 октября", "icon": "♎" },
-  { "name": "Скорпион", "dateRange": "23 октября - 21 ноября", "icon": "♏" },
-  { "name": "Стрелец", "dateRange": "22 ноября - 21 декабря", "icon": "♐" },
-  { "name": "Козерог", "dateRange": "22 декабря - 19 января", "icon": "♑" },
-  { "name": "Водолей", "dateRange": "20 января - 18 февраля", "icon": "♒" },
-  { "name": "Рыбы", "dateRange": "19 февраля - 20 марта", "icon": "♓" }
+  { "name": "aries", "dateRange": "march 21 - april 19", "icon": "♈" },
+  { "name": "taurus", "dateRange": "april 20 - may 20", "icon": "♉" },
+  { "name": "gemini", "dateRange": "may 21 - june 20", "icon": "♊" },
+  { "name": "cancer", "dateRange": "june 21 - july 22", "icon": "♋" },
+  { "name": "leo", "dateRange": "july 23 - august 22", "icon": "♌" },
+  { "name": "virgo", "dateRange": "august 23 - september 22", "icon": "♍" },
+  { "name": "libra", "dateRange": "september 23 - october 22", "icon": "♎" },
+  { "name": "scorpio", "dateRange": "october 23 - november 21", "icon": "♏" },
+  { "name": "sagittarius", "dateRange": "november 22 - december 21", "icon": "♐" },
+  { "name": "capricorn", "dateRange": "december 22 - january 19", "icon": "♑" },
+  { "name": "aquarius", "dateRange": "january 20 - february 18", "icon": "♒" },
+  { "name": "pisces", "dateRange": "february 19 - march 20", "icon": "♓" }
 ]

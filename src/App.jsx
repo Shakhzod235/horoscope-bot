@@ -1,24 +1,25 @@
-import { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import CardList from "./components/CardList";
-const tg = window.Telegram.WebApp;
+import Description from "./pages/Description";
+import Home from "./pages/Home";
+
 function App() {
-  useEffect(() => {
-    tg.ready();
-  }, []);
-  const onClose = () => {
-    tg.close();
-  };
   return (
-    <div className="App">
-      <CardList />
-      <button
-        onClick={onClose}
-        className="close-btn"
-      >
-        Закрыть
-      </button>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={<Home />}
+          />
+          <Route
+            path="/description/"
+            element={<Description />}
+          />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

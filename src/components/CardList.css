@@ -1,6 +1,10 @@
 .zodiacList {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  max-width: 100%;
   width: fit-content;
-  gap: 10px;
+  gap: 12px;
+}
+.link {
+  text-decoration: none;
 }
