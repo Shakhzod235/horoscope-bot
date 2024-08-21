@@ -1,17 +1,13 @@
 require("dotenv").config();
-
-const TelegramBot = require("node-telegram-bot-api");
+const { Telegraf } = require("telegraf");
 
 const token = process.env.token;
 const webAppURL = process.env.webAppURL;
-const bot = new TelegramBot(token, { polling: true });
-
-bot.on("message", async (msg) => {
-  const chatId = msg.chat.id;
-  const text = msg.text;
+const bot = new Telegraf(token);
+bot.on("message", async (ctx) => {
+  const text = ctx.message.text;
   if (text === "/start") {
-    await bot.sendMessage(
-      chatId,
+    await ctx.sendMessage(
       "Нажми кнопку ниже, чтобы получить прогноз на сегодня",
       {
         reply_markup: {
@@ -23,3 +19,4 @@ bot.on("message", async (msg) => {
     );
   }
 });
+bot.launch();
