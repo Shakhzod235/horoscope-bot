@@ -2,7 +2,7 @@ require("dotenv").config();
 const { Telegraf } = require("telegraf");
 
 const token = process.env.token;
-const webAppURL = process.env.webAppURL;
+const webAppURL = "https://horoscopebot.netlify.app/";
 const bot = new Telegraf(token);
 bot.on("message", async (ctx) => {
   const text = ctx.message.text;
