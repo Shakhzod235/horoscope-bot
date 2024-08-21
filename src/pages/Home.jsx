@@ -6,9 +6,9 @@ export default function Home() {
   const { tg, onClose, expand } = useTelegram();
   useEffect(() => {
     tg.ready();
+    expand();
   }, []);
   onClose;
-  expand;
   return (
     <>
       <CardList />
